@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+# Jetbrains
+# pycharm
+.idea/
+downloaded/
+log/
+
+
 # Distribution / packaging
 .Python
 build/
@@ -56,7 +63,7 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
+#*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
