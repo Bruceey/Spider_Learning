@@ -1,0 +1,1538 @@
+html><head>
+<meta charset="utf-8">
+<meta name="baidu_ssp_verify" content="39f14c78c537175eb4b5192c72d002c1">
+<meta name="baidu-site-verification" content="cNhJHKEzsD">
+<meta name="360-site-verification" content="e37aef53e3922913e2a6a4682e479b84">
+<meta name="sogou_site_verification" content="7zFjYjJaMq">
+<meta name="msvalidate.01" content="0CA3171633345524D8CBED5E95C75FFF">
+<meta name="google-site-verification" content="rh2irYN2Lu028orAseOD3aXd5u7Eu1mqTfhoVaw2Ihg">
+<meta name="shenma-site-verification" content="12da4afc02bfe908ed0667f287167d11_1555581349">
+<meta property="qc:admins" content="27354635321361636375">
+<link rel="canonical" href="https://music.163.com/">
+<meta name="applicable-device" content="pc,mobile">
+<title>网易云音乐</title>
+<meta name="keywords" content="网易云音乐，音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单，识别音乐，收藏，分享音乐，音乐互动，高音质，320K，音乐社交，官网，music.163.com">
+<meta name="description" content="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。">
+<meta property="og:title" content="网易云音乐">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg">
+<meta property="og:url" content="https://music.163.com/">
+<meta property="og:site_name" content="网易云音乐">
+<script src="https://st.music.163.com/encrypt-validator/musicfrontencryptvalidator.min.js" async=""></script><script>(function(){
+    if (window.CMFrontEncryptedValidator) {
+        var validatorOptions = {
+"captchaOptions": {
+  "qrSize": 150
+},
+"whiteAPIs": ["ac.dun.163yun.com/v3/d", "ac.dun.163.com/v2/config/js", "ac.dun.163yun.com/v3/b", "ac.dun.163yun.com/v2/b","ac.dun.163yun.com/v2/d"]
+} || {};
+        var env = 'prod' || 'prod';
+        var sampleRate = 0.01 || 1;
+        var isBubbleEncryptResult = true || false;
+        var disable = false || false;
+
+        validatorOptions.env = env;
+        validatorOptions.sampleRate = sampleRate;
+        validatorOptions.isBubbleEncryptResult = isBubbleEncryptResult;
+        validatorOptions.disable = disable;
+        validatorOptions.whiteAPIs = validatorOptions.whiteAPIs || [];
+
+        window.CMFrontEncryptedValidator(validatorOptions);
+    }
+    })()</script><script src="https://st.music.163.com/encrypt-sdk/musicfrontencryptsdk.min.js" async=""></script><script>(function(){
+if (window.CMFrontEncryptedSDK) {
+    var disable = false;
+    var injectData = {
+"WEVNSM": "1.0.0"
+}  || {};
+    var crawlerVersion = '01' || {};
+    var cookieOption = {
+  "sameSite": "strict"
+} || {};
+    var env = 'prod' || 'prod';
+    var options = {
+        env: env,
+       disable: disable,
+       injectData: injectData,
+       crawlerVersion: crawlerVersion,
+       cookieOption: cookieOption
+    };
+    window.CMFrontEncryptedSDK.init(options);
+}
+})()</script><script async="" src="https://s6.music.126.net/puzzle/puzzle@0002A4.js"></script><script type="text/javascript">
+if (location.pathname.indexOf("outchain") === -1) {
+if (document.domain.match(/music.163.com$/)) {
+document.domain = "music.163.com";
+} else {
+document.domain = document.domain;
+}
+}
+var GDownloadLink="";
+var GDevice = "phone";
+var GFrom="";
+var GClient="";
+var GPlatform="other";
+var GRef = '';
+var GInApp = false;
+var GMobile = false;
+var GAbroad = false;
+var GUser={};
+var GAllowRejectComment = false;
+var GEnc = true;
+var GEnvType = "online";
+var GWebpSupport = "1";
+var vipWebCashierRedirect = "1";
+window.NEJ_CONF = {p_csrf:{cookie:'__csrf',param:'csrf_token'}};
+GUtil = {
+getBase:function(){
+return location.protocol+'//'+location.hostname;
+},
+getPathAndHash:function(_url){//获取URL path 之后的所有内容,并将/#/替换成/m/使之成为path的一部分
+if(!_url) return '';
+var _reg0 = /^https?:\/\/.*?\//i,
+_reg1 = /\/?#\/?/i;
+return _url.replace(_reg0,'/').replace(_reg1,'/m/');
+},
+composeRefer:function(_url,_ref){//对所有的页面请求都加上ref参数表示被嵌套的来源
+if(!_ref) return _url;
+var _hi = _url.indexOf('#'),
+_si = _url.indexOf('?');
+if(_si>0&&(_si<_hi||_hi<0)){
+return _url.substring(0,_si+1)+'ref='+_ref+'&'+_url.substring(_si+1);
+}else if(_hi>0&&(_si<0||_si>_hi)){
+return _url.substring(0,_hi)+'?ref='+_ref+_url.substring(_hi);
+}else{
+return _url+'?ref='+_ref;
+}
+}
+};(function(){
+var _ua = window.navigator.userAgent,
+_isMobile = /(mobile|mobi|wap|iphone)/i.test(_ua),
+_isAndroid = /android/i.test(_ua),
+_isIpad = /(ipad)/i.test(_ua),
+_igList = [/^\/xiami$/,/^\/live$/],//不需要以单页面打开的列表，比如某些活动页面
+_pn = location.pathname,
+_ydomainPath = ['home', 'activity','album','artist','djradio','radio','dj','login','mv','playlist','program','song','tiktoksong', 'uniplaylist','unisong','user','video','event','discover/toplist','user/home'],
+_idx = _pn.lastIndexOf('/'),
+_pReg = /\s*(\w+)\s*=\s*(\d+)\s*/,
+_isOnCDN = function(type) {
+return _ydomainPath.indexOf(type) !== -1;
+},
+_isOnline = function() {
+return location.host.indexOf('music.163.com') !== -1
+},
+_getBase = function(type) {
+return location.protocol + '//' + ((_isOnCDN(type) && _isOnline()) ? 'y.music.163.com' : location.hostname);
+},
+_redirect2mobile = function() {
+var _type,_murl,
+_id = 0,
+_hash = location.hash,
+_mReg = /^#\/?m?\/(share|song|playlist|djradio|dj|program|album|mv|artist|topic|radio|zysf|drqp|qp|activity|store|user|event|video|discover\/toplist|login)(\/(\d+))?/,
+_base = location.protocol+'//'+location.hostname,
+_sindex = _hash.lastIndexOf('?'),
+_search = _sindex>-1?_hash.substring(_sindex+1):'',
+_match = _mReg.exec(_hash);
+// 用户等级页特殊处理
+if (_hash === '#/user/level') {
+location.href = _base + '/store/m/gain/mylevel';
+return;
+}
+// 网易音乐人手册特殊处理
+if (/^#\/series\b/.test(_hash)) {
+var _seriesQuery = _search.replace('id', 'seriesId');
+location.href = _base + '/m/topic/all?' + _seriesQuery;
+return;
+}
+// 无hash || 不匹配 || 匹配但是商品之外不带参数 || 匹配且是排行榜
+if (!_hash.length || !_match || (_match[1] != 'store' && !_search) || /share|discover\/toplist/.test(_match[1])) {
+// 有hash && (没有参数 || 排行榜)
+if ((!_search || /share|discover\/toplist/.test(_match[1])) && _hash.length) {
+location.href = ((_match && _match[1]) ? _getBase(_match[1]) : _base) + '/' + _hash.replace('#', 'm');
+} else {
+location.href = _getBase('home') + '/m/';
+}
+return;
+}
+_type = _match[1];
+_id = _match[3];
+if (_type == 'dj') _type = 'program';
+if (_type == 'store') {
+_murl = /^#\/store\/(product|concert)\/detail/.test(_hash) ? _hash.replace('#/store', '/store/m') : '/store/m/product/index';
+} else {
+_murl = '/' + _type + '?' + (_id ? 'id=' + _id + '&' : '') + _search;
+}
+location.href = _getBase(_type) + (_isOnCDN(_type) ? '/m' : '') + _murl;
+};
+if(_isMobile || _isAndroid || _isIpad){
+_redirect2mobile();
+return;
+}
+if(!_pn||_pn=='/') return;
+for(var i in _igList){
+if(_igList[i].test(_pn)) return;
+}
+if(top==self){
+location.href = '/#'+GUtil.getPathAndHash(location.href);
+return;
+}
+//搜索引擎过来的内容页连接
+if(top==self&&/^\/static\/(song|playlist|album|artist)/i.test(_pn)){
+location.href = '/#'+_pn.substring(0,_idx).replace('/static/','/')+'?id='+_pn.substring(_idx+1);
+}
+})();
+(function(){
+var _addEvent = function(_node,_type,_cb){
+if(_node.addEventListener){
+_node.addEventListener(_type,_cb);
+}else if(_node.attachEvent){
+_node.attachEvent('on'+_type,_cb);
+}
+},
+_pathPrefixArray = [
+'/store/', // 商城
+'/m/at/', // 活动
+'/prime/m/', // 会员移动端页面
+'/oauth2/', // 授权
+'/m/oauth2/', // 授权
+'/octave/', // 新数字专辑
+'/v/', // 新数字专辑
+'/st/', // 静态页面
+'/nmusician/',// 音乐人
+'/nact/', // 新活动
+'/m/topic/', // 专栏移动端
+'/show/m/', //演出移动端
+],
+_isNotMainsitePagePath = function(_pagePath){
+// 对于非主站内的页面的跳转 需要排除
+var _path = (_pagePath||'').replace(/^https?:\/\/.*?\//i, '/').split(/[?#]/)[0];
+for(var i=0;i<_pathPrefixArray.length;i++){
+if(_path.indexOf(_pathPrefixArray[i])===0) return true;
+}
+return false;
+},
+_onAnchorClick = function(_event){//截获所有<a>标签的点击事件，自定义页面的跳转
+_event = _event||window.event;
+var _el = _event.target||_event.srcElement,
+_base = location.protocol+'//'+location.host;
+while(_el&&_el!=document){
+if(_el.tagName&&_el.tagName.toLowerCase()=='a'){
+//fix ie6下有时javascript:;不能阻止默认事件的bug.
+if(_el.href.indexOf('javascript:')>=0){
+!!_event.preventDefault
+? _event.preventDefault()
+: _event.returnValue = !1;
+return;
+}
+if(_event.button==2) return;//ff 右键会触发click事件
+//商城有独立地顶栏了，排除掉。但会员、数字专辑、单曲的商品、订单页仍保持主站frame，
+//这些url往往是通过/vip2, /payfee这样的地址跳转的，也没有问题，如果真的有，URL用#配置就好了
+if(_isNotMainsitePagePath(_el.href)) return;
+//新窗口打开的链接、云音乐单页面形式的链接、站外的链接不做拦截处理。
+if(_el.target=='_blank'
+||_el.target=='blank'
+||_isNotSameHost(_el.href)
+||_el.href==_base
+||_el.href.indexOf(_base+'/#')>=0) return;
+!!_event.preventDefault
+? _event.preventDefault()
+: _event.returnValue = !1;
+location.dispatch2(_el.href);
+break;
+}else{
+_el = _el.parentNode;
+}
+}
+},
+_isNotSameHost = function(_href){
+var _same = true;
+if(_href.charAt(0)!='/'){
+var _index = _href.indexOf('//'+location.hostname);
+if(_index > 0){
+var _index2 = _href.indexOf('?');
+if(_index2 > 0 && _index2 < _index){
+_same = false;
+}
+}else{
+_same = false;
+}
+}
+return !_same;
+};
+_addEvent(document,'click',_onAnchorClick);
+//扩展一个js中直接使用的页面跳转的方法，以拦截js中的页面跳转行为
+location.dispatch2 = function(_url,_replace){
+var delegate = false;
+try{
+delegate = !!top.GDispatcher;
+}catch(e){
+delegate = false;
+}
+// 处理对于非主站内的页面的跳转
+if(_isNotMainsitePagePath(_url)){
+if(delegate && top.location && top.location.href){
+top.location.href = _url;
+}else{
+location.href = _url;
+}
+return;
+}
+if(delegate){
+top.GDispatcher.dispatch(_url,_replace);
+}else{
+_url = GUtil.composeRefer(_url,GRef);
+//邮箱音乐盒中，每次链接的跳转都要将proxy.html的地址合并到hash中
+if(GRef&&GRef=='mail'){
+var _hindex,_sindex,
+_reg = /(https?:\/\/.+\/proxy.html)/,
+_hreg = /#(.*?)$/,
+_href = decodeURIComponent(location.href);
+if(!_reg.test(decodeURIComponent(_url))&&_reg.test(_href)){
+_hindex = _url.indexOf('#');
+_sindex = _url.lastIndexOf('?');
+if(_hindex>0){
+_url = _url+(_sindex>_hindex?'&':'?')+'proxy='+encodeURIComponent(RegExp.$1);
+}else{
+_url = _url+'#proxy='+encodeURIComponent(RegExp.$1);
+}
+}
+}
+if(_replace){
+location.replace(_url);
+}else{
+location.href = _url;
+}
+}
+};
+})();
+(function start() {
+var targetUrl = 'https://music.163.com';
+// 首先检测hash规则, 在白名单内才进行跳转
+var hashWhite = /^(\/discover|\/download|\/login)/ig;
+// 如果当前域不是163域名，那么强制跳转到163.com
+var siteReg = /^(https?:\/\/)?([a-zA-Z0-9]+(-?[a-zA-Z0-9])*\.){1,}?(163\.com)$/ig;
+if(hashWhite.test(window.location.pathname) && !siteReg.test(window.location.hostname)){
+top.location.href = targetUrl;
+}
+})();</script>
+<link rel="shortcut icon" href="//s1.music.126.net/style/favicon.ico?v20180823">
+<link href="//s2.music.126.net/web/s/core_603fd33de14e4966b4362f1fb0c0234a.css?603fd33de14e4966b4362f1fb0c0234a" type="text/css" rel="stylesheet"><link href="//s2.music.126.net/web/s/pt_frame_c3088b9117c9aad9d000091a014b147c.css?c3088b9117c9aad9d000091a014b147c" type="text/css" rel="stylesheet">
+<style>html,body{overflow:hidden;}</style>
+<script>if(top!=self)top.location=self.location;</script>
+<script type="text/javascript">
+(function(){
+var GDegradeConfig = {}; // 降级配置默认值
+try {
+GDegradeConfig = JSON.parse("{\"apiList\":{\"_api_topic_user_info\":{\"type\":0},\"_api_copyright_pay_fee_message_config\":{\"result\":\"{\\\"code\\\":200,\\\"config\\\":{\\\"ipadvip\\\":\\\"版权方要求，当前歌曲需付费使用。您可以到iPhone/Android/网页版购买后使用\\\",\\\"headpic_lossless\\\":\\\"109951163349949354\\\",\\\"vip2\\\":\\\"版权方要求，当前歌曲仅限开通VIP使用\\\",\\\"commonQuality2link\\\":\\\"2元购买此单曲\\\",\\\"vipCacheOnlyRenewLink\\\":\\\"单曲购买\\\",\\\"unknow\\\":\\\"版权方要求，当前资源需付费使用\\\",\\\"upgradeVipPro\\\":\\\"该权益仅限黑胶VIP使用，立即升级畅享特权\\\",\\\"superQuality\\\":\\\"无损品质需付费使用，开通VIP即可自由畅享\\\",\\\"upgradeVipProButton\\\":\\\"升级为黑胶VIP\\\",\\\"headpic_general\\\":\\\"109951163349949354\\\",\\\"albumbutton\\\":\\\"购买专辑\\\",\\\"headpic_download\\\":\\\"109951163349949354\\\",\\\"downloadOnly\\\":\\\"版权方要求，当前歌曲仅限开通VIP使用\\\",\\\"vipbutton\\\":\\\"开通音乐包\\\",\\\"unknowbutton\\\":\\\"现在去订购\\\",\\\"downloadOnlyButton\\\":\\\"开通音乐包\\\",\\\"vipCacheOnlyRenew\\\":\\\"VIP已过期，当前歌曲无法离线播放，应版权方要求，开通VIP即可继续使用\\\",\\\"vipDownloadLink\\\":\\\"2元购买此单曲\\\",\\\"superQualitybutton\\\":\\\"开通音乐包\\\",\\\"entryNotVip\\\":\\\"会员中心\\\",\\\"headpic_quality\\\":\\\"109951163349949354\\\",\\\"exclusive\\\":\\\"版权方要求，会员专属曲库仅限开通VIP下载，开通即可畅享\\\",\\\"commonQuality\\\":\\\"版权方要求，当前歌曲该音质需付费使用，开通VIP即可自由畅享\\\",\\\"vip\\\":\\\"版权方要求，当前歌曲需付费使用，开通VIP即可自由畅享\\\",\\\"buyVipPro\\\":\\\"该权益仅限黑胶VIP使用，立即开通畅享特权\\\",\\\"downloadOnlyLink\\\":\\\"单曲购买\\\",\\\"commonQuality2button\\\":\\\"开通音乐包\\\",\\\"buyVipProButton\\\":\\\"开通黑胶VIP\\\",\\\"vip2link\\\":\\\"2元购买此单曲\\\",\\\"vipCacheOnlyRenewButton\\\":\\\"开通音乐包\\\",\\\"album\\\":\\\"版权方要求，当前专辑需单独付费，购买数字专辑即可无限畅享\\\",\\\"commonQuality2\\\":\\\"版权方要求，当前歌曲该音质仅限开通VIP使用\\\",\\\"vipDownload\\\":\\\"版权方要求，当前歌曲需付费下载，开通VIP即可畅享\\\",\\\"vipCacheOnlyLink\\\":\\\"2元购买此单曲\\\",\\\"vip2button\\\":\\\"开通音乐包\\\",\\\"vipCacheOnlyButton\\\":\\\"开通音乐包\\\",\\\"vipCacheOnly\\\":\\\"版权方要求，当前歌曲需付费下载，下载后可在VIP有效期内离线使用\\\",\\\"ipadvipaudit\\\":\\\"版权方要求，当前歌曲需付费使用。您可以到iPhone版网易云音乐购买后使用\\\",\\\"vipDownloadButton\\\":\\\"开通音乐包\\\",\\\"payFeeTableName\\\":\\\"会员中心\\\",\\\"entryVip\\\":\\\"我的会员\\\"}}\",\"type\":1},\"_api_reward_user_showicon\":{\"type\":0},\"_api_privacy_info_get_v2\":{\"type\":0},\"_api_cdns\":{\"type\":0},\"_api_feedback_weblog\":{\"type\":0},\"_api_activity_p2p_flow_switch_get\":{\"result\":\"{\\\"code\\\":200,\\\"data\\\":\\\"{\\\\n \\\\\\\"xysdk\\\\\\\":\\\\\\\"//s5.music.126.net/static_public/5a1b70ea0180f6ca7295a59d/js/p2p-xy-sdk.2.1.12.1.min.js\\\\\\\",\\\\n \\\\\\\"yfsdk\\\\\\\":\\\\\\\"//s5.music.126.net/static_public/5a1b70ea0180f6ca7295a59d/js/p2p-yf-sdk.1.0.0.53.min.js\\\\\\\",\\\\n \\\\\\\"audio\\\\\\\":{\\\\n \\\\\\\"turnon\\\\\\\":false,\\\\n \\\\\\\"init\\\\\\\":0,\\\\n \\\\\\\"xy\\\\\\\":1,\\\\n \\\\\\\"yf\\\\\\\":0\\\\n },\\\\n \\\\\\\"video\\\\\\\":{\\\\n \\\\\\\"turnon\\\\\\\":false,\\\\n \\\\\\\"init\\\\\\\":0,\\\\n \\\\\\\"xy\\\\\\\":1,\\\\n \\\\\\\"yf\\\\\\\":0\\\\n }\\\\n}\\\"}\",\"type\":1},\"_api_login_token_refresh\":{\"type\":0},\"_api_web_banner\":{\"type\":1},\"_api_pl_count\":{\"type\":0},\"_api_discovery_recommend_resource\":{\"type\":0},\"_api_event_user_permission\":{\"result\":\"{\\\"code\\\":200,\\\"topEventPermission\\\":false,\\\"pubEventWithPictureForbiddenNotice\\\":\\\"等级达到Lv.0，即可添加图片\\\",\\\"LongMsgNum\\\":400,\\\"eventVideoUploadNosType\\\":1,\\\"pubEventWithPics\\\":true,\\\"pubEventWithoutResource\\\":false,\\\"lotteryEventPermission\\\":false,\\\"pubLongMsgEvent\\\":false}\",\"type\":1},\"_api_privilege_message_mv\":{\"result\":\"{\\\"code\\\":200,\\\"data\\\":{\\\"mvOnlyMusicPackageButton\\\":\\\"开通音乐包\\\",\\\"mvOnlyVinylVipButton\\\":\\\"开通黑胶VIP\\\",\\\"onlyBuyMv\\\":\\\"版权方要求，当前资源需单独付费使用\\\",\\\"unauthorizedMv\\\":\\\"版权方要求，当前资源暂时无法使用\\\",\\\"mvOnlyVinylVip\\\":\\\"版权方要求，当前资源仅限黑胶VIP使用\\\",\\\"onlyBuyMvButton\\\":\\\"去购买\\\",\\\"mvOnlyDownload\\\":\\\"版权方要求，当前资源需下载后播放\\\",\\\"mvOnlyPlay\\\":\\\"版权方要求，当前资源不能下载\\\",\\\"mvOnlyMusicPackage\\\":\\\"版权方要求，当前资源仅限音乐包用户使用\\\"}}\",\"type\":1}},\"degrade\":false,\"degradeLogin\":false,\"degradeUserList\":[64970269],\"discoverUrl\":\"https://y.music.163.com/discover\",\"vipUserList\":[]}");
+if (GDegradeConfig.apiList) {
+// 预处理所有数据
+for (var attr in GDegradeConfig.apiList) {
+if (GDegradeConfig.apiList[attr]
+&& GDegradeConfig.apiList[attr].result) {
+try {
+GDegradeConfig.apiList[attr].result = JSON.parse(GDegradeConfig.apiList[attr].result);
+} catch(e) {
+GDegradeConfig.apiList[attr].result = null;
+}
+}
+}
+}
+} catch (e) {
+console.log(e);
+}
+window.GDegradeConfig = GDegradeConfig;
+// console.log(window.GDegradeConfig);
+})();
+</script>
+<script type="text/javascript" charset="UTF-8" async="" src="https://acstatic-dun.126.net/2.7.1_a02527b8/watchman.min.js"></script><script type="text/javascript" charset="UTF-8" async="" src="https://acstatic-dun.126.net/2.7.1_a02527b8/watchman.min.js"></script><style type="text/css">/* 还是需要定高点 */
+.style_openmask__1Iqoy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 10004;
+}
+.style_openmask__1Iqoy .style_opentip__3Z4Df {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  right: 10px;
+  height: 144px;
+}
+.style_openmask__1Iqoy .style_opentip__3Z4Df .style_lay__1ovDQ {
+  width: 100%;
+  height: 120px;
+  border-radius: 0 0 8px 8px;
+  background: #f9f9f9 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAACgCAMAAAAbzCHkAAAAOVBMVEUAAABNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU0DekkdAAAAEnRSTlMA8ietERxLacmDeNa5oVuRNeAOJcWwAAADUUlEQVR42u2dy5KjMAxFJeMnYB73/z92CJlMkpqqnsequw9nkyKVjWIhXUvC2PcgGplVXgxL1sFoVGbdyMYk6aQak1UCL390eVolzUakSd3iLmkzHum2+GYZuvyDVOygI+/+Rep2UoHBP/kvl4+TRNN+VTXa035nif/1bn0oy3azv6obiFHDewAYSNFvUXv8DVrtZN0x7r9M21P2jo8vKck/Lfagv8T8wNv5zm+KB6d9K1PvP3ApGRfJjUuQJuOSmXvdB0UssfubAmggrXtx8ULtPKH7ZGPnPXjgX3k1vlcqscL9xCVMied3Nmk3LkUajEtnR74dXepJ7FrHNqE3+2Yp2AWTtIAlj9koNeNSpcWwRKEF/wIc6HlhIM8ym7kEzvqZXebr7LTH9v2F7fuNHfctjeSpDjbspc/s5tYgrYYlCJ30V/ZAk6M7m4Xd2tvRva2F3dyZ0FvdLNpTW2+EgSx5DgJY8IP9/iB7I/8B7LBf0GE/OrrE19BqPzm6pz2gm7oZekTLT3Z0ha+hk56FmVzlOAAX+DJ4m2cW3MEZ3yq6n98k56b8DX0iZ5zQXa0uOTfwF+R5fA82J2v9OKFznjU5eJbBLHNvfLDpZ9gDyx1LLk3YEkecRA57s+Tce7+LXNZf0du8JrLWHYU+maKgt/igY3d/p6D7GSN6arWB3zVzz/czVuh36JtGTuJMzvepCvyQ1raLPLaYHZ3yrGD393FYwQPbAfhqoSeLg4Ne7AKX9bZJUqW2sEcH17VSJTu+xZ3r+CGYZWzEb17NDLr0eQc3MtKgg8rsYMbmEvbt6cV10KF3/ayDyhzSjffTN5h+n2s1s8p8EHmZwAOqZdKBI1N9an4avxLDfRx0A3n4wG29d0l7ARq/zMpmTTMw5OXukgbiixTiMrgkaMd21p2JdrBmWnoym07bG8vpt9L3+zDqqjp+ZtvD4D6EDy7+kVTW6rrTzdLn9vlwV2Hhg4u/JOSyjmZZP/F5/Pyb2UEnw8cX78T4+AzBzErrc911YzILOtiH8vlNv+E68Q8v3hn0Qrr98ImZ9fELPWX/H+bPeiGY7TrZax+/3OD9fzj/6rrjvk/BbGxl2b7Ogv9D6Pv+T9H8IfF9c+svLi4uLi4uLhj8AJRKMdjUtWgaAAAAAElFTkSuQmCC) 100% 4px no-repeat;
+  background-size: 127px auto;
+}
+.style_openmask__1Iqoy .style_opentip__3Z4Df .style_lay__1ovDQ .style_note__10dvC {
+  float: right;
+  margin: 14px 58px 0 0;
+  width: 167px;
+  line-height: 20px;
+  color: #222;
+}
+.style_openmask__1Iqoy .style_opentip__3Z4Df .style_lay__1ovDQ h3 {
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.style_openmask__1Iqoy .style_opentip__3Z4Df .style_lay__1ovDQ p {
+  font-size: 14px;
+}
+</style><style type="text/css">/* 还是需要定高点 */
+.style_wrapper__1p8NA {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-overflow-scrolling: touch;
+  z-index: 10002;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.style_wrapper__1p8NA * {
+  -webkit-tap-highlight-color: transparent;
+}
+.style_wrapper__1p8NA .style_modalwrap__27JAU {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  background-color: #000;
+}
+.style_wrapper__1p8NA .style_body__3otNa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 8px;
+  z-index: 1;
+}
+.style_wrapper__1p8NA .style_title__2QK1w,
+.style_wrapper__1p8NA .style_content__1tas6 {
+  font-size: 18px;
+  padding: 15px 22px 0;
+  line-height: 1.2;
+  margin: 0;
+}
+.style_wrapper__1p8NA .style_title__2QK1w {
+  font-weight: 700;
+}
+.style_wrapper__1p8NA .style_content__1tas6 {
+  overflow: hidden;
+  height: 100%;
+  padding: 0 22px;
+  margin-top: 5px;
+  min-height: 40px;
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.style_wrapper__1p8NA .style_footer__3VGqx {
+  overflow: hidden;
+  position: relative;
+  margin-top: 15px;
+  height: 44px;
+  min-height: 44px;
+  line-height: 1;
+  text-align: center;
+}
+.style_wrapper__1p8NA .style_footer__3VGqx::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  -ms-transform: scale(0.5);
+      transform: scale(0.5);
+  -ms-transform-origin: left top;
+      transform-origin: left top;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+.style_wrapper__1p8NA .style_button__14tP8 {
+  cursor: pointer;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  color: #0076ff;
+  font-size: 14px;
+  position: relative;
+  vertical-align: middle;
+}
+.style_wrapper__1p8NA .style_button__14tP8 .style_btntext__2s0cj {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+.style_wrapper__1p8NA .style_button__14tP8.style_cancel__v69gK::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 200%;
+  -ms-transform: scale(0.5);
+      transform: scale(0.5);
+  -ms-transform-origin: left top;
+      transform-origin: left top;
+  background-color: #dbdbdb;
+}
+.style_wrapper__1p8NA.style_m-mobile__q2nA9 .style_body__3otNa,
+.style_wrapper__1p8NA.style_m-app__3xype .style_body__3otNa {
+  max-width: 6.48148148rem;
+  border-radius: 0.22222222rem;
+}
+.style_wrapper__1p8NA.style_m-mobile__q2nA9 .style_title__2QK1w,
+.style_wrapper__1p8NA.style_m-app__3xype .style_title__2QK1w {
+  font-size: 0.41666667rem;
+  padding: 0.27777778rem 0.2037037rem 0.27777778rem;
+}
+.style_wrapper__1p8NA.style_m-mobile__q2nA9 .style_content__1tas6,
+.style_wrapper__1p8NA.style_m-app__3xype .style_content__1tas6 {
+  padding: 0.09259259rem 0.37037037rem;
+  min-height: 0.92592593rem;
+  font-size: 0.37037037rem;
+  text-align: center;
+}
+.style_wrapper__1p8NA.style_m-mobile__q2nA9 .style_footer__3VGqx,
+.style_wrapper__1p8NA.style_m-app__3xype .style_footer__3VGqx {
+  margin-top: 0.46296296rem;
+  height: 1.11111111rem;
+  min-height: 1.11111111rem;
+  line-height: 0rem;
+}
+.style_wrapper__1p8NA.style_m-mobile__q2nA9 .style_button__14tP8,
+.style_wrapper__1p8NA.style_m-app__3xype .style_button__14tP8 {
+  font-size: 0.33333333rem;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+  .style_footer__3VGqx:after {
+    width: 300%;
+  }
+  .style_button__14tP8.style_cancel__v69gK:after,
+  .style_footer__3VGqx:after {
+    -ms-transform: scale(0.33);
+        transform: scale(0.33);
+  }
+  .style_button__14tP8.style_cancel__v69gK:after {
+    height: 300%;
+  }
+}
+</style><style type="text/css">/* 还是需要定高点 */
+/* 中间显示toast */
+.style_CMFrontEncryptedValidator-toast__2hRBW {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10003;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  min-width: 70px;
+  min-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  transition: all 200ms linear;
+  /* 动画设置 */
+}
+.style_CMFrontEncryptedValidator-toast__2hRBW.style_toast-entering__2f54c {
+  opacity: 0;
+}
+.style_CMFrontEncryptedValidator-toast__2hRBW.style_toast-entered__1M1Hx {
+  opacity: 1;
+}
+.style_CMFrontEncryptedValidator-toast__2hRBW.style_toast-exiting__LG8YG {
+  opacity: 1;
+}
+.style_CMFrontEncryptedValidator-toast__2hRBW.style_toast-exited__1vYPC {
+  opacity: 0;
+}
+.style_CMFrontEncryptedValidator-toast__2hRBW .style_text__1FTZu {
+  padding: 10px 15px;
+  line-height: 30px;
+  font-size: 15px;
+  color: #fff;
+}
+.style_CMFrontEncryptedValidator-toast-center__1xkCf {
+  width: 180px;
+  min-height: 116px;
+  border-radius: 6px;
+}
+.style_CMFrontEncryptedValidator-toast-center__1xkCf .style_icn__2KezR {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 10px auto 15px;
+}
+.style_CMFrontEncryptedValidator-toast-center__1xkCf .style_text__1FTZu {
+  line-height: 20px;
+  padding: 0 15px 0;
+  margin: 15px 0;
+}
+.style_CMFrontEncryptedValidator-toast-loading__1Av04 {
+  margin-top: -100px;
+  width: 180px;
+  min-height: 116px;
+  border-radius: 6px;
+}
+.style_CMFrontEncryptedValidator-toast-loading__1Av04 .style_icn__2KezR {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 27px 0 6px;
+  background: url("//p3.music.126.net/C9tJEnwLhYm4dvTdsukD0g==/19106213556354168.jpg") no-repeat;
+  background-size: 30px 240px;
+  background-position: 0 0;
+  animation: style_toastload__14ZuG 0.72s infinite step-start;
+}
+.style_CMFrontEncryptedValidator-toast-loading__1Av04 .style_text__1FTZu {
+  line-height: 20px;
+  padding: 0 15px 10px;
+}
+.style_CMFrontEncryptedValidator-toast-iconmiddle__3H8C6 .style_icn__2KezR {
+  margin-top: 43px;
+}
+@keyframes style_toastload__14ZuG {
+  0% {
+    background-position-y: 0;
+  }
+  14.28% {
+    background-position-y: -30px;
+  }
+  28.56% {
+    background-position-y: -60px;
+  }
+  42.84% {
+    background-position-y: -90px;
+  }
+  57.12% {
+    background-position-y: -120px;
+  }
+  71.4% {
+    background-position-y: -150px;
+  }
+  85.68% {
+    background-position-y: -180px;
+  }
+  100% {
+    background-position-y: -210px;
+  }
+}
+</style><style type="text/css">.style_loadingctn__3dRwX {
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.style_loadingctn__3dRwX .style_loading__1qz1r {
+  line-height: 0;
+  text-align: center;
+}
+.style_loadingctn__3dRwX .style_loadingimg__1pUq8 {
+  width: 18px;
+  height: 18px;
+}
+.style_loadingctn__3dRwX .style_icon__12G4j {
+  width: 30px;
+  height: 30px;
+  fill: #555;
+  margin: 0 auto;
+}
+.style_loadingctn__3dRwX .style_textwrapper__2XQ5y {
+  margin-top: 10px;
+}
+.style_loadingctn__3dRwX .style_text__1q5wH {
+  font-size: 13px;
+  color: #888;
+  text-indent: 6px;
+}
+.style_loadingctn__3dRwX .style_text__1q5wH.style_reloadMsg__3AV24 {
+  margin-top: 10px;
+}
+.style_loadingctn__3dRwX.style_m-mobile__33Sny .style_icon__12G4j,
+.style_loadingctn__3dRwX.style_m-app__3H8c3 .style_icon__12G4j {
+  width: 0.55555556rem;
+  height: 0.55555556rem;
+}
+.style_loadingctn__3dRwX.style_m-mobile__33Sny .style_loadingimg__1pUq8,
+.style_loadingctn__3dRwX.style_m-app__3H8c3 .style_loadingimg__1pUq8 {
+  width: 0.37037037rem;
+  height: 0.37037037rem;
+}
+.style_loadingctn__3dRwX.style_m-mobile__33Sny .style_textwrapper__2XQ5y,
+.style_loadingctn__3dRwX.style_m-app__3H8c3 .style_textwrapper__2XQ5y {
+  margin-top: 0.18518519rem;
+}
+.style_loadingctn__3dRwX.style_m-mobile__33Sny .style_text__1q5wH,
+.style_loadingctn__3dRwX.style_m-app__3H8c3 .style_text__1q5wH {
+  font-size: 0.37037037rem;
+  line-height: 1.3;
+}
+.style_loadingctn__3dRwX.style_m-mobile__33Sny .style_text__1q5wH.style_reloadMsg__3AV24,
+.style_loadingctn__3dRwX.style_m-app__3H8c3 .style_text__1q5wH.style_reloadMsg__3AV24 {
+  margin-top: 0.18518519rem;
+}
+</style><style type="text/css">/* 还是需要定高点 */
+/* 透明遮罩层，防止用户可以操作 */
+.style_validatorwrapper__2pnes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+.style_validatorwrapper__2pnes.style_m-mobile__3Zrin,
+.style_validatorwrapper__2pnes.style_m-app__RzjAe {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.style_closebtn__2wfqf {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  fill: #000;
+  text-align: left;
+}
+.style_closebtn__2wfqf svg {
+  position: relative;
+  top: 19px;
+  left: 19px;
+}
+.style_validatorctn__3qGia.style_m-web__ZI-DV {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  width: 380px;
+  min-height: 400px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  z-index: 10001;
+}
+.style_validatorctn__3qGia.style_m-mobile__3Zrin,
+.style_validatorctn__3qGia.style_m-app__RzjAe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  width: 80%;
+  min-height: 8.50925926rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 0.01851852rem solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.41666667rem;
+  padding: 0.0462963rem;
+  text-align: center;
+  z-index: 10001;
+  padding-bottom: 1rem;
+}
+.style_validatorctn__3qGia.style_m-mobile__3Zrin .style_closebtn__2wfqf,
+.style_validatorctn__3qGia.style_m-app__RzjAe .style_closebtn__2wfqf {
+  width: 0.86111111rem;
+  height: 0.86111111rem;
+  bottom: -2.13888889rem;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  left: 50%;
+  top: auto;
+  line-height: 1;
+}
+.style_validatorctn__3qGia.style_m-mobile__3Zrin .style_closebtn__2wfqf svg,
+.style_validatorctn__3qGia.style_m-app__RzjAe .style_closebtn__2wfqf svg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style><style type="text/css">.style_sliderctn__PyyvO {
+  width: 100%;
+  height: 100%;
+}
+.style_sliderctn__PyyvO.style_hide__11z8Y {
+  display: none;
+}
+.style_sliderctn__PyyvO .style_title__KfPiP {
+  font-size: 22px;
+  color: #333333;
+  margin: 20px auto 40px;
+  font-weight: 500;
+}
+.style_sliderctn__PyyvO .style_loadingwrapper__1aVK6 {
+  width: 100%;
+  height: 340px;
+}
+.style_sliderctn__PyyvO.style_m-mobile__3VJvw,
+.style_sliderctn__PyyvO.style_m-app__2ZKer {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.style_sliderctn__PyyvO.style_m-mobile__3VJvw .style_title__KfPiP,
+.style_sliderctn__PyyvO.style_m-app__2ZKer .style_title__KfPiP {
+  font-size: 0.46296296rem;
+  margin-top: 1.03703704rem;
+  margin-bottom: 0.55555556rem;
+  line-height: 1.1;
+}
+.style_sliderctn__PyyvO.style_m-mobile__3VJvw .style_loadingwrapper__1aVK6,
+.style_sliderctn__PyyvO.style_m-app__2ZKer .style_loadingwrapper__1aVK6 {
+  height: 7.50925926rem;
+}
+.style_sliderctn__PyyvO.style_m-app__2ZKer {
+  width: 85%;
+}
+.style_sliderctn__PyyvO.style_validatePage__ysWZB .style_loadingwrapper__1aVK6 {
+  height: 100%;
+}
+</style><style type="text/css">.style_qrcodectn__GLxAI {
+  width: 100%;
+  height: 100%;
+}
+.style_qrcodectn__GLxAI p {
+  margin: 0;
+}
+.style_qrcodectn__GLxAI .style_loadingwrapper__3TSVs {
+  width: 100%;
+  height: 340px;
+}
+.style_qrcodectn__GLxAI .style_title__3gz0o {
+  font-size: 22px;
+  color: #333333;
+  font-weight: 500;
+  margin: 20px auto 35px;
+}
+.style_qrcodectn__GLxAI .style_text__aQImb {
+  color: #fff;
+  margin: 0;
+}
+.style_qrcodectn__GLxAI .style_btn__1I6TE {
+  background: #FF3A3A;
+  border-radius: 20px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.style_qrcodectn__GLxAI .style_qrcode__2d7dF {
+  position: relative;
+  margin: 0 auto;
+  width: 170px;
+  height: 170px;
+}
+.style_qrcodectn__GLxAI .style_qrcode__2d7dF .style_loadingctn__2VyDG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
+.style_qrcodectn__GLxAI img {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+}
+.style_qrcodectn__GLxAI .style_expired__JErG6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.style_qrcodectn__GLxAI .style_expired__JErG6 .style_expiredwrapper__2Rr5A {
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/gif;base64,R0lGODdhcABwAIAAAAAAAP///ywAAAAAcABwAAAC/4yPqcvtD6OctNqLs968+w+G4kiW5olCwMq27gsj8Awwrczi9B4//O/SAW25w80ITKqSQ6RycTREA8ymo/oTZqFFaZeK3S1XmOk46PuaJ2tFO/Imvs7C8ldeu8S58zTZmWex5/UneOeHdqV2KDEIVvhIU8cXGDnptgi5RViJp9XD6Ql4mTBlykMqyjmTOuoaSkm6aYn42QeLqZnZ+Uq7CurbcCrWizfMq6hLjCu8y1pMeUxx/MysGlkdbLw77QzsSP3NWCoOSQeYDe59qx1djkyuLAmdWzmrvtxeb5uoH2+Pit6/dONkBbQWC927MwTNJfzFDh+8c/t6vZGmp6BAiv//DDpk5uiaSDbjMCIEqTHZxI21Hga7yC3jx4Fh+pl8GRNizZn8dnoEKO/nTolDc+IMarFov21FfzpNqjRliWz8qqa4SlWhvJBXO2TVabXria/Y1q000dBmybVb2Z5txlMrULUzYbatK3VkvXBIK/otizeuSoZmW508upTlYEQ3bxoGbAXyLMJ9EeuVfBBzPspzn/7tmdknyYhG7cITrXOyzHmHTfOdq/owZ8cC074my3XvQpdhIYNm93i20ce2zeLOKze3P463a3bb3NJQ5ajKY8N9e615mOes4SD/qx2LnXzhuTPFrvh62t/oWwPjyH198u/+yF4WPj0zfLnmGRf/5g0VbMPVRl9xgZ1W2m6fpdfbcQcKNaB7gtF0F4IPBkibhO35xh+BE1YB4RMqvUacVCBiyARnDbqFH10Ciqjefxq22Jhz0dXnlnzgJUjahxHiSB6LAa7oY2UlBnkhShUGNySAqf1Y45LpmXafO0iK12EjQi44Ymg2gjWahWLG5+V2WXqXZEdh3vMlh2JxaZmTaoL55px2UnmjfV3hOWOe79UJZGdyhrghdTn+6NlyUxoqZoZ3IrqooecxqaSgi3XZlJWWXpdolbLdyNyWnH6gHKWPpulpBaUy2CScpvYnXaFQmkhfqFcSSuiJuhX5oou4omjmrm+V16qbiKFG4bDGnPHYa64pamprd1H2aqCswLnEZn4VVksmr+wlGh6Ja9K6LbPO9pgYpsqWa+R82m7Knp6V6pjstEdiealm8Lq7qaPIZldmowrGKax1r2J76LU7oiuvovm69ufCLja8aqXnSURkd6kCfCDFMupL47N0gowwqpFSl7GD+/apLrLV8hloqow2yy/HYw4KaM4678xzzz7/DHTQQg9NNAkFAAA7');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  /* Chrome, Opera */
+  -moz-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+.style_qrcodectn__GLxAI .style_expiremsg__1-GKI {
+  position: absolute;
+  top: 50px;
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 100%;
+  margin: 0;
+}
+.style_qrcodectn__GLxAI .style_expirebtn__3rk3b {
+  position: absolute;
+  bottom: 50px;
+  left: 45px;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+}
+.style_qrcodectn__GLxAI .style_float__1u9XQ {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+}
+.style_qrcodectn__GLxAI .style_footer__3SDFM {
+  margin: 20px 33px 0;
+  font-size: 14px;
+  color: #666;
+}
+.style_qrcodectn__GLxAI .style_music163__1xS-J {
+  color: #3072a5;
+}
+.style_qrcodectn__GLxAI .style_failbtn__2Hp0l {
+  margin-top: 40px;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+}
+.style_qrcodectn__GLxAI.style_m-mobile__wxNWK,
+.style_qrcodectn__GLxAI.style_m-app__2MG6Q {
+  width: 90%;
+  margin: 0 auto;
+}
+.style_qrcodectn__GLxAI.style_m-mobile__wxNWK .style_loadingwrapper__3TSVs,
+.style_qrcodectn__GLxAI.style_m-app__2MG6Q .style_loadingwrapper__3TSVs {
+  height: 7.32407407rem;
+}
+.style_qrcodectn__GLxAI.style_m-mobile__wxNWK .style_title__3gz0o,
+.style_qrcodectn__GLxAI.style_m-app__2MG6Q .style_title__3gz0o {
+  font-size: 0.46296296rem;
+  margin-top: 1.03703704rem;
+  margin-bottom: 0.55555556rem;
+  line-height: 1.1;
+}
+.style_qrcodectn__GLxAI.style_m-mobile__wxNWK .style_qrcode__2d7dF,
+.style_qrcodectn__GLxAI.style_m-app__2MG6Q .style_qrcode__2d7dF {
+  width: 3.62962963rem;
+  height: 3.62962963rem;
+}
+.style_qrcodectn__GLxAI.style_m-mobile__wxNWK .style_footer__3SDFM,
+.style_qrcodectn__GLxAI.style_m-app__2MG6Q .style_footer__3SDFM {
+  margin: 0.37037037rem 0.30555556rem 0rem;
+  font-size: 0.37037037rem;
+  color: #666;
+}
+.style_qrcodectn__GLxAI.style_m-mobile__wxNWK .style_expiremsg__1-GKI,
+.style_qrcodectn__GLxAI.style_m-app__2MG6Q .style_expiremsg__1-GKI {
+  font-size: 0.55555556rem;
+  top: 1.57407407rem;
+}
+.style_qrcodectn__GLxAI.style_m-mobile__wxNWK .style_expirebtn__3rk3b,
+.style_qrcodectn__GLxAI.style_m-app__2MG6Q .style_expirebtn__3rk3b {
+  width: 2.40740741rem;
+  font-size: 0.41666667rem;
+  top: 2.77777778rem;
+  left: 1.15740741rem;
+  height: 0.83333333rem;
+  line-height: 0.83333333rem;
+}
+</style><style type="text/css">.captcha_captcha-ctn__NUoZl {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.captcha_captcha-ctn__NUoZl .captcha_tip__eTYs0 {
+  padding: 0.36111111rem 0.44444444rem;
+  background: #fffbe5;
+  color: #333;
+  font-size: 0.30555556rem;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0.83333333rem 0.55555556rem 1.38888889rem 0.44444444rem;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 .captcha_left__3yxAc {
+  text-align: left;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 .captcha_left__3yxAc .captcha_title__1Ip4l {
+  margin-bottom: 0.27777778rem;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.47222222rem;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 .captcha_left__3yxAc .captcha_number__12Mfe {
+  color: #999;
+  font-size: 0.41666667rem;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 .captcha_right__2sN2h {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 .captcha_right__2sN2h .captcha_text__3c8PN {
+  color: #333;
+  font-size: 0.33333333rem;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 .captcha_right__2sN2h .captcha_send__3Uy5f {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-width: 0.02777778rem;
+  border-radius: 0.33333333rem;
+  width: 1.83333333rem;
+  padding: 0.16666667rem 0rem;
+  text-align: center;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 .captcha_right__2sN2h .captcha_senderr__2c5hn {
+  padding: 2px 10px;
+  color: #ff2525;
+  font-size: 12px;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 .captcha_right__2sN2h.captcha_count__1fID4 {
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+.captcha_captcha-ctn__NUoZl .captcha_phone-number__1rQy2 .captcha_right__2sN2h.captcha_count__1fID4 .captcha_count-down__3hapC {
+  font-size: 0.41666667rem;
+  color: #999;
+}
+.captcha_captcha-ctn__NUoZl .captcha_capthca__sMVz3 {
+  margin: 0rem 1.38888889rem 0rem 1.38888889rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 0.83333333rem;
+}
+.captcha_captcha-ctn__NUoZl .captcha_capthca__sMVz3 .captcha_code__1lUWS {
+  position: relative;
+  width: 1.38888889rem;
+  text-align: center;
+  font-size: 0.55555556rem;
+}
+.captcha_captcha-ctn__NUoZl .captcha_capthca__sMVz3 .captcha_code__1lUWS::after {
+  /* 用图片方式 */
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 1px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB5JREFUeNpiPnH8zH/GMzAxAAHTyRNn/wMEGABpvQm9g9TJ1QAAAABJRU5ErkJggg==");
+  background-repeat: repeat-x;
+  z-index: 0;
+}
+.captcha_captcha-ctn__NUoZl .captcha_capthca__sMVz3 .captcha_code__1lUWS.captcha_focus__1X-Sd {
+  color: #333;
+}
+.captcha_captcha-ctn__NUoZl .captcha_capthca__sMVz3 .captcha_code__1lUWS.captcha_focus__1X-Sd::after {
+  /* 用图片方式 */
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg==");
+}
+.captcha_captcha-ctn__NUoZl .captcha_deprecated__UtPL6 {
+  text-align: center;
+  margin-top: 0.55555556rem;
+  color: #999;
+  font-size: 0.36111111rem;
+}
+.captcha_captcha-ctn__NUoZl .captcha_deprecated__UtPL6 .captcha_arrow__T6Cm4 {
+  display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 0.11111111rem;
+  width: 0.14814815rem;
+  height: 0.25rem;
+  background: url(https://p1.music.126.net/bZcc9l_4cd6cKSRHkJQx5w==/109951164367908552.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.captcha_captcha-ctn__NUoZl .captcha_shadow-input__3rgUL {
+  position: absolute;
+  top: -9999px;
+  left: 0;
+  z-index: -1;
+  -webkit-tap-highlight-color: transparent;
+}
+</style><style type="text/css">/* 存放验证器全局样式 */
+/* 验证器根容器 */
+.global_container__10fOb * {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+</style></head>
+<body>
+<div id="g-topbar" class="g-topbar" style="width: 1185px; top: 0px;">
+<div class="m-top">
+<div class="wrap f-cb">
+<h1 class="logo"><a hidefocus="true" href="/#">网易云音乐</a></h1>
+<ul class="m-nav j-tflag">
+<li class="fst">
+<span><a hidefocus="true" href="/#" data-module="discover" class=""><em>发现音乐</em><sub class="cor">&nbsp;</sub></a></span>
+</li>
+<li>
+<span><a data-action="bilog" data-log-action="page" data-log-json="{&quot;type&quot;:&quot;my&quot;}" hidefocus="true" href="/my/" data-module="my"><em>我的音乐</em><sub class="cor">&nbsp;</sub></a></span>
+</li>
+<li>
+<span><a hidefocus="true" href="/friend" data-module="friend"><em>朋友</em><sub class="cor">&nbsp;</sub><i class="dot j-t" style="display:none;"></i></a></span>
+</li>
+<li>
+<span><a hidefocus="true" href="/store/product" target="_blank" data-module="store"><em>商城</em></a></span>
+</li>
+<li>
+<span><a hidefocus="true" href="/musician/artist" target="_blank" data-module="musician"><em>音乐人</em></a></span>
+</li>
+<li class="lst">
+<span><a id="topbar-download-link" data-action="bilog" data-log-action="page" data-log-json="{&quot;type&quot;:&quot;downloadapp&quot;,&quot;source&quot;:&quot;tab&quot;}" hidefocus="true" href="/download" data-module="download"><em>下载客户端</em><sub class="cor">&nbsp;</sub></a></span><sup class="hot">&nbsp;</sup>
+</li>
+</ul>
+<div class="m-tophead f-pr j-tflag" id="auto-id-Ew4zn2smv5hpxo28"><a hidefocus="true" href="#" class="link s-fc3" data-action="login">登录</a>
+<div class="m-tlist j-uflag" style="display:none;">
+<div class="inner">
+</div>
+<i class="arr"></i>
+</div>
+</div>
+<a data-action="bilog" data-log-action="click" data-log-json="{&quot;target&quot;:&quot;uploadvideo&quot;,&quot;page&quot;:&quot;homepage&quot;}" href="/login?targetUrl=%2Fcreatorcenter" target="_blank" class="m-topvd f-pr m-creator-center">创作者中心</a>
+<div class="m-srch f-pr j-suggest" id="g_search">
+<div class="srchbg">
+<span class="parent">
+<input type="text" name="srch" id="srch" class="txt j-flag" value="" style="opacity: 1;">
+<label class="ph j-flag" id="auto-id-gnICTbbgRBUIRdaW" style="display: none;">音乐/视频/电台/用户</label>
+</span>
+</div>
+<div class="j-showoff u-showoff f-hide"><p>现在支持搜索MV啦~</p></div>
+<span class="j-flag" style="display:none;" id="auto-id-9xeMGM5wDwquRqUc">&nbsp;</span>
+<div class="u-lstlay j-flag" style="display:none;" id="auto-id-w2fFZElt7oD9Bhs6"></div>
+</div>
+</div>
+</div>
+<div class="m-subnav m-subnav-up f-pr j-tflag"></div>
+<div id="g_nav2" class="m-subnav j-tflag f-hide">
+<div class="wrap f-pr">
+<ul class="nav">
+<li><a hidefocus="true" data-module="discover" href="/discover" class="z-slt"><em>推荐</em></a></li>
+<li><a hidefocus="true" data-module="toplist" href="/discover/toplist"><em>排行榜</em></a></li>
+<li><a hidefocus="true" data-module="playlist" href="/discover/playlist"><em class="f-pr" style="padding: 0 15px 0 11px;">歌单<span class="f-pa f-r-white-icon" style="display:inline-block;width:8px;height:8px;top:2px;background-size:cover;"></span></em></a></li>
+<li><a hidefocus="true" data-module="djradio" href="/discover/djradio"><em>主播电台</em></a></li>
+<li><a hidefocus="true" data-module="artist" href="/discover/artist"><em>歌手</em></a></li>
+<li><a hidefocus="true" data-module="album" href="/discover/album"><em>新碟上架</em></a></li>
+</ul>
+</div>
+</div>
+</div>
+<iframe name="contentFrame" id="g_iframe" class="g-iframe" scrolling="auto" frameborder="0" src="about:blank" allowfullscreen="true"></iframe>
+<script type="text/javascript">
+var GUserAcc={topic:1, reward:false};
+(function(){
+var topbar = document.getElementById('g-topbar'),
+scrollBarWidth = document.body.clientWidth - topbar.clientWidth;
+topbar.style.width = topbar.clientWidth+'px';
+topbar.className = 'g-topbar';
+if(window.addEventListener){
+window.addEventListener('resize', onResize)
+}else{
+window.attachEvent('onresize', onResize)
+}
+function onResize(){
+topbar.style.width = (document.body.clientWidth-scrollBarWidth)+'px';
+};
+})();/**
+* Safari v14 render issue
+* https://g.hz.netease.com/cloudmusic-frontend/music-web-mainsite/-/issues/6
+*/
+(function () {
+var $topbar;
+function onResize() {
+try {
+$topbar = $topbar || document.getElementById('g-topbar');
+var vendor = window.navigator.vendor;
+var appVersion = window.navigator.appVersion;
+var isMac = /Apple Computer/.test(vendor);
+var isTargetVersion = /Version\/14\./.test(appVersion);
+if ($topbar && $topbar.style && isMac && isTargetVersion) {
+$topbar.style.overflow = 'hidden';
+$topbar.offsetWidth;
+$topbar.style.overflow = 'visible';
+}
+} catch (e) {
+// nothing
+console.log('[ERROR] about g-topbar');
+}
+}
+if (window.addEventListener) {
+window.addEventListener('resize', onResize);
+window.addEventListener('load', onResize);
+} else {
+window.attachEvent('onresize', onResize);
+window.attachEvent('onload', onResize);
+}
+})();/*!
+* Copyright (c) 2009-2011 Andreas Blixt <andreas@blixt.org>
+* Contributors: Aaron Ogle <aogle@avencia.com>,
+* Matti Virkkunen <mvirkkunen@gmail.com>,
+* Simon Chester <simonches@gmail.com>
+* http://github.com/blixt/js-hash
+* MIT License: http://www.opensource.org/licenses/mit-license.php
+*
+* Hash handler
+* Keeps track of the history of changes to the hash part in the address bar.
+*/
+/* WARNING for Internet Explorer 7 and below:
+* If an element on the page has the same ID as the hash used, the history will
+* get messed up.
+*
+* Does not support history in Safari 2 and below.
+*
+* Example:
+* function handler(newHash, initial) {
+* if (initial)
+* alert('Hash is "' + newHash + '"');
+* else
+* alert('Hash changed to "' + newHash + '"');
+* }
+* Hash.init(handler);
+* Hash.go('abc123');
+*
+*
+* Updated by Simon Chester (simonches@gmail.com) on 2011-05-16:
+* - Removed the need for blank.html and the iframe argument by creating the
+* iframe on initialization.
+*
+* Updated by Matti Virkkunen (mvirkkunen@gmail.com) on 2009-11-16:
+* - Added second argument to callback that indicates whether the callback is
+* due to initial state (true) or due to an actual change to the hash
+* (false).
+*
+* Updated by Aaron Ogle (aogle@avencia.com) on 2009-08-11:
+* - Fixed bug where Firefox automatically unescapes location.hash but no
+* other browsers do. Always get the hash by parsing location.href and
+* never use location.hash.
+*/
+var Hash = (function () {
+var
+// Import globals
+window = this,
+documentMode = document.documentMode,
+history = window.history,
+// Plugin variables
+callback, hash,
+// IE-specific
+iframe,
+getHash = function () {
+// Internet Explorer 6 (and possibly other browsers) extracts the query
+// string out of the location.hash property into the location.search
+// property, so we can't rely on it. The location.search property can't be
+// relied on either, since if the URL contains a real query string, that's
+// what it will be set to. The only way to get the whole hash is to parse
+// it from the location.href property.
+//
+// Another thing to note is that in Internet Explorer 6 and 7 (and possibly
+// other browsers), subsequent hashes are removed from the location.href
+// (and location.hash) property if the location.search property is set.
+//
+// Via Aaron: Firefox 3.5 (and below?) always unescape location.hash which
+// causes poll to fire the hashchange event twice on escaped hashes. This
+// is because the hash variable (escaped) will not match location.hash
+// (unescaped.) The only consistent option is to rely completely on
+// location.href.
+var index = window.location.href.indexOf('#');
+return (index == -1 ? '' : window.location.href.substr(index + 1));
+},
+// Used by all browsers except Internet Explorer 7 and below.
+poll = function () {
+var curHash = getHash();
+if (curHash != hash) {
+hash = curHash;
+callback(curHash, false);
+}
+},
+// From:
+// http://perfectionkills.com/detecting-event-support-without-browser-sniffing/
+isHashChangeSupported = function() {
+var eventName = 'onhashchange';
+var isSupported = (eventName in document.body);
+if (!isSupported) {
+document.body.setAttribute(eventName, 'return;');
+isSupported = typeof document.body[eventName] == 'function';
+}
+// documentMode logic from YUI to filter out IE8 Compat Mode (which
+// generates false positives).
+return isSupported && (document.documentMode === undefined ||
+document.documentMode > 7);
+},
+createIframe = function () {
+var tempEl = document.createElement();
+tempEl.innerHTML = '<iframe src="javascript:void(0)" tabindex="-1" ' +
+'style="display: none;"></iframe>';
+var frame = tempEl.childNodes[0];
+document.body.appendChild(frame);
+return frame;
+},
+// Used to create a history entry with a value in the iframe.
+setIframe = function (newHash) {
+try {
+var doc = iframe.contentWindow.document;
+doc.open();
+doc.write('<html><body>' + newHash + '</body></html>');
+doc.close();
+hash = newHash;
+} catch (e) {
+setTimeout(function () { setIframe(newHash); }, 10);
+}
+},
+// Used by Internet Explorer 7 and below to set up an iframe that keeps track
+// of history changes.
+setUpIframe = function () {
+// Don't run until access to the body is allowed.
+try {
+iframe = createIframe();
+} catch (e) {
+setTimeout(setUpIframe, 10);
+return;
+}
+// Create a history entry for the initial state.
+setIframe(hash);
+var data = hash;
+setInterval(function () {
+var curData, curHash;
+try {
+curData = iframe.contentWindow.document.body.innerText;
+if (curData != data) {
+data = curData;
+window.location.hash = hash = curData;
+callback(curData, true);
+} else {
+curHash = getHash();
+if (curHash != hash) setIframe(curHash);
+}
+} catch (e) {
+}
+}, 50);
+};
+return {
+init: function (cb) {
+// init can only be called once.
+if (callback) return;
+callback = cb;
+// Keep track of the hash value.
+hash = getHash();
+cb(hash, true);
+if (isHashChangeSupported()) {
+if (window.addEventListener){
+window.addEventListener('hashchange', poll, false);
+} else if (window.attachEvent){
+window.attachEvent('onhashchange', poll);
+}
+} else {
+// Run specific code for Internet Explorer.
+if (window.ActiveXObject) {
+if (!documentMode || documentMode < 8) {
+// Internet Explorer 5.5/6/7 need an iframe for history
+// support.
+setUpIframe();
+}
+} else {
+// Change Opera navigation mode to improve history support.
+if (history.navigationMode) {
+history.navigationMode = 'compatible';
+}
+setInterval(poll, 50);
+}
+}
+},
+go: function (newHash) {
+// Cancel if the new hash is the same as the current one, since there
+// is no cross-browser way to keep track of navigation to the exact
+// same hash multiple times in a row. A wrapper can handle this by
+// adding an incrementing counter to the end of the hash.
+if (newHash == hash) return;
+if (iframe) {
+setIframe(newHash);
+} else {
+window.location.hash = hash = newHash;
+callback(newHash, false);
+}
+}
+};
+})();var GDispatcher = (function(){
+var _lastPage = '',
+_igReg = /f=(.*?)/,
+_hReg = /\/?#.*/,
+_xssReg = /(java|vb)script/,//xss注入
+_default = '/discover';
+function _isIE10plus(){
+var _ua = window.navigator.userAgent;
+return (/msie\s+(.*?);/i.test(_ua)||/trident\/.+rv:([\d\.]+)/i.test(_ua))&&(parseInt(RegExp.$1)>=10);
+};
+function getDiscoverUrl() {
+var GDegradeConfig = window.GDegradeConfig || {};
+var discoverUrl = GDegradeConfig.degrade && GDegradeConfig.discoverUrl || '/discover';
+return encodeURI(discoverUrl);
+}
+function _onHashChange(_hash){
+var _url,
+_iframe = document.getElementById('g_iframe');
+if(!_hash||_igReg.test(_hash)||_xssReg.test(_hash)){//忽略统计来源的hash
+_url = _default;
+}else{
+if(_hash.indexOf('/') !== 0) {
+_hash = '/' + _hash;
+}
+_hash = _hash.replace(/\/+/g, '/');//#29664 http://music.163.com/#// 会死循环
+var _midx = -1;
+if((_midx=_hash.indexOf('store/m/'))>=0){
+_url = _hash.substring(0, _midx+8)+(_hash.substring(_midx+8).replace('/m/','/#/'));
+}else{
+_url = _hash.replace('/m/','/#/');
+// debugger;
+if(/^\/member\/?(\?[\s\S]*)?$/.test(_url) && typeof vipWebCashierRedirect !== 'undefined' && '' + vipWebCashierRedirect === '1') {
+_url = _url.replace('/member','/prime/member');
+}
+}
+}
+if(_url === '/discover') {
+_url = getDiscoverUrl();
+}
+if(!_url.match(/^https?:/)){
+_url = location.protocol+'//'+location.hostname+_url;
+}
+//针对ie10+ location.replace的bug做特殊处理
+if(_isIE10plus()){
+if(_lastPage.replace(_hReg,'')==_url.replace(_hReg,'')){//只是hash的改变
+_iframe.contentWindow.location.replace(_url);
+} else{
+_iframe.parentNode.removeChild(_iframe);
+_iframe = document.createElement('iframe');
+_iframe.id = 'g_iframe';
+_iframe.src = 'about:blank';
+_iframe.className = 'g-iframe';
+_iframe.setAttribute('allowfullscreen', true);
+document.body.insertAdjacentElement('afterBegin',_iframe);
+_iframe.contentWindow.location.href = _url;
+}
+}else{
+_iframe.contentWindow.location.replace(_url);
+}
+_lastPage = _url;
+if(typeof window.onHashChange=='function'){
+window.onHashChange(_hash);
+}
+};
+Hash.init(_onHashChange);
+return {
+dispatch:function(_url,_replace){
+var _ph = GUtil.getPathAndHash(_url);
+if(!_ph) return;
+if(_replace){
+location.replace(GUtil.getBase()+'#'+_ph);
+}else{
+location.hash = _ph;
+}
+},
+refreshIFrame:function(_url){
+_onHashChange(_url);
+}
+};
+})();</script>
+<div class="g-btmbar">
+<div class="m-playbar m-playbar-unlock" style="top: -7px; visibility: visible;" id="auto-id-hoWDReptSB0y98yN">
+<div class="updn">
+<div class="left f-fl"><a href="javascript:;" class="btn" hidefocus="true" data-action="lock"></a></div>
+<div class="right f-fl"></div>
+</div>
+<div class="bg"></div>
+<div class="hand" title="展开播放条"></div>
+<div class="wrap" id="g_player" style="margin-left: -497.5px;">
+<div class="btns">
+<a href="javascript:;" hidefocus="true" data-action="prev" class="prv" title="上一首(ctrl+←)">上一首</a>
+<a href="javascript:;" hidefocus="true" data-action="play" class="ply j-flag" title="播放/暂停(p)">播放/暂停</a>
+<a href="javascript:;" hidefocus="true" data-action="next" class="nxt" title="下一首(ctrl+→)">下一首</a>
+</div>
+<div class="head j-flag"><img src="http://s4.music.126.net/style/web2/img/default/default_album.jpg"><a href="javascript:;" hidefocus="true" class="mask"></a></div>
+<div class="play">
+<div class="j-flag words"></div>
+<div class="m-pbar" data-action="noop">
+<div class="barbg j-flag" id="auto-id-EJbcxPZGX8w8eIvc">
+<div class="rdy" style="width:0%;"></div>
+<div class="cur" style="width:0%;"><span class="btn f-tdn f-alpha" id="auto-id-VppIAXtbOGTTFlcC"><i></i></span></div>
+</div>
+<span class="j-flag time"><em>00:00</em> / 00:00</span>
+</div>
+</div>
+<div class="oper f-fl">
+<a href="javascript:;" hidefocus="true" data-action="like" class="icn icn-add j-flag" title="收藏">收藏</a>
+<a href="javascript:;" hidefocus="true" data-action="share" class="icn icn-share" title="分享">分享</a>
+</div>
+<div class="ctrl f-fl f-pr j-flag">
+<div class="m-vol" style="visibility:hidden;" id="auto-id-RZs5RcISP3qIIUVK">
+<div class="barbg"></div>
+<div class="vbg j-t" id="auto-id-BAsGsPSc1JX8Cs6B"><div class="curr j-t" style="height: 74.4px;"></div>
+<span class="btn f-alpha j-t" style="top: 16.2px;"></span></div>
+</div>
+<a href="javascript:;" hidefocus="true" data-action="volume" class="icn icn-vol"></a>
+<a href="javascript:;" hidefocus="true" data-action="mode" class="icn icn-loop" title="循环"></a>
+<span class="add f-pr">
+<span class="tip" style="display:none;">已添加到播放列表</span>
+<a href="javascript:;" title="播放列表" hidefocus="true" data-action="panel" class="icn icn-list s-fc3">0</a>
+</span>
+<div class="tip tip-1" style="display:none;">循环</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="//s3.music.126.net/web/s/core_68ac1b3aadf40a20caba599a0ab2365d.js?68ac1b3aadf40a20caba599a0ab2365d" type="text/javascript"></script><iframe frameborder="0" id="auto-id-wTO8Tmzy2w38TO0i" style="display: none;" src="about:blank"></iframe><script type="text/javascript" src="https://acstatic-dun.126.net/tool.min.js"></script><script src="//s3.music.126.net/web/s/pt_frame_index_159d092e0e5d16f9bc34b1cd960da3f9.js?159d092e0e5d16f9bc34b1cd960da3f9" type="text/javascript"></script><script type="text/javascript" src="https://acstatic-dun.126.net/tool.min.js"></script>
+
+<script type="text/javascript">
+var _gaq=_gaq||[];
+_gaq.push(['_setAccount','UA-38766552-1'],['_setLocalGifPath','/UA-38766552-1/__utm.gif'],['_setLocalRemoteServerMode']);
+_gaq.push(['_trackPageview']);
+//fix ipad下的一个bug
+if (navigator.userAgent.indexOf('iPad') != -1) {
+iframeHeight = Math.max(
+Math.max(document.body.scrollHeight, document.documentElement.scrollHeight),
+Math.max(document.body.offsetHeight, document.documentElement.offsetHeight),
+Math.max(document.body.clientHeight, document.documentElement.clientHeight)
+);
+top.document.body.style.height = iframeHeight + 20 + 'px';
+}
+</script>
+<div></div><div></div><div class="global_container__10fOb"></div></body></html>

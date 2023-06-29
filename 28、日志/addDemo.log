@@ -1,0 +1,9 @@
+2021-05-16 15:32:06,721|20|log2_四个组件.py|28|this is a info log
+2021-05-16 15:32:06,721|30|log2_四个组件.py|29|this is a warning log
+2021-05-16 15:32:06,721|40|log2_四个组件.py|30|this is a error log
+2021-05-16 15:32:06,721|50|log2_四个组件.py|31|this is a critical log
+2021-05-16 15:46:02,865|10|log2_四个组件.py|27|this is a debug log
+2021-05-16 15:46:02,865|20|log2_四个组件.py|28|this is a info log
+2021-05-16 15:46:02,865|30|log2_四个组件.py|29|this is a warning log
+2021-05-16 15:46:02,865|40|log2_四个组件.py|30|this is a error log
+2021-05-16 15:46:02,865|50|log2_四个组件.py|31|this is a critical log

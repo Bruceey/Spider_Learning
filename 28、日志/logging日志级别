@@ -1,0 +1,7 @@
+级别         级别数值
+DEBUG       10
+INFO        20
+WARNING     30
+ERROR       40
+CRITICAL    50
+默认是warning
